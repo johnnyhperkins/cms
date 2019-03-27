@@ -65,10 +65,10 @@ const someArray = [
 
 ## For loops
 - Default to `for...of` for arrays
-```
+```javascript
 for(let element of array) console.log(element);
 ```
 - Default to `for...in` for objects instead of using `Object.keys`
-```
+```javascript
 for(let key of object) object[key];
 ```
