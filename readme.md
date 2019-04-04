@@ -1,4 +1,4 @@
-# Wordpress clone - name TBD
+# Border Box
 CMS Platform that will provide a way for non-technical users to create simple websites with menus, images, text, etc. When creating individual pages, the interface will be block based, allowing users to select different size blocks and fill them with their content. They will also be able to drag and drop to rearrange them.
 
 ## Users/Accounts

@@ -1,0 +1,10 @@
+# After every change you’re making to the datamodel file, you need to redeploy the Prisma API to apply your changes and migrate the underlying database schema. Use 'prisma deploy'.
+
+# This now updated the Prisma API. You also need to update the auto-generated Prisma client so that it can expose CRUD methods for the newly added User model. Use 'prisma generate' (this is done automatically if the prima.yml file is updated with a post-deploy hook)
+
+type User {
+  id: ID! @unique
+  name: String!
+  email: String! @unique
+  password: String!
+}
