@@ -11,7 +11,7 @@
   width: 400px;
   transition: transform ease .5s;
 
-  * { transition: opacity ease .5s; }
+  header, main, footer { transition: opacity ease .5s; }
 
   &.hidden {
     transform: translateX(330px);
@@ -20,7 +20,7 @@
       opacity: 0;
     }
 
-    button {
+    button.side-bar-toggle {
       transform: translateX(-330px) rotate(180deg);
     }
   }
@@ -38,13 +38,14 @@
     img.logo { height: 30px; }
 
     h3 {
+      color: $primary-color;
       flex-grow: 1;
       margin-left: 20px;
     }
 
   }
   
-  button {
+  button.side-bar-toggle {
     height: 30px;
     vertical-align: middle; 
     position: absolute;
@@ -62,6 +63,18 @@
 
   footer {
     border-top: 1px solid $light-grey;
-    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+
+    button {
+      background-color: $primary-color;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #FFFFFF;
+      margin-left: 5px;
+      padding: 5px 10px;
+    }
   }
 }

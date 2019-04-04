@@ -1,0 +1,29 @@
+@import './colors';
+
+div.form-input {
+  background-color: $light-grey;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  cursor: grab;
+  padding: 20px;
+  transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 100%;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+
+  input[type='text'] {
+    border: 2px solid $dark-grey;
+    border-radius: 10px;
+    cursor: inherit;
+    outline: none;
+    padding: 10px 20px;
+    width: 100%;
+    transition: border 0.3s ease;
+
+    &:focus {
+      border: 2px solid $primary-color;
+    }
+  }
+}

@@ -11,6 +11,11 @@
   src: url('../fonts/Bold.otf') format('opentype');
   font-weight: 700;
 }
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../fonts/Medium.otf') format('opentype');
+  font-weight: 500;
+}
 
 body {
   margin: 0;
