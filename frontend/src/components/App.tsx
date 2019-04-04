@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
-import FormView from './components/form_creator/form_view';
+import FormView from './form_creator/form_view';
+import '../styles/App.css';
 
 class App extends Component {
   render() {

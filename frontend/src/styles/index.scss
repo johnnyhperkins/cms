@@ -1,21 +1,16 @@
 @import '~sanitize.css';
+@import '~material-design-icons/iconfont/material-icons.css';
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('./fonts/Regular.otf') format('opentype');
+  src: url('../fonts/Regular.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'TT Norms';
-  src: url('./fonts/Bold.otf') format('opentype');
+  src: url('../fonts/Bold.otf') format('opentype');
   font-weight: 700;
 }
-
-$primary-color: #d81b60;
-$secondary-color: #ff5c8d;
-$tertiary-color: #a00037;
-$dark-grey: #E1E2E1;
-$light-grey: #F5F5F6;
 
 body {
   margin: 0;
@@ -32,4 +27,13 @@ code {
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 0;
+  outline: none;
+  padding: 0;
 }

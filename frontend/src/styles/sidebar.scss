@@ -1,0 +1,67 @@
+@import './colors';
+
+.sidebar {
+  box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 400px;
+  transition: transform ease .5s;
+
+  * { transition: opacity ease .5s; }
+
+  &.hidden {
+    transform: translateX(330px);
+
+    header, main, footer {
+      opacity: 0;
+    }
+
+    button {
+      transform: translateX(-330px) rotate(180deg);
+    }
+  }
+
+  header {
+    align-items: center;
+    border-bottom: 1px solid $light-grey;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700; 
+    padding: 20px;
+    min-height: 30px; 
+    width: 100%;
+
+    img.logo { height: 30px; }
+
+    h3 {
+      flex-grow: 1;
+      margin-left: 20px;
+    }
+
+  }
+  
+  button {
+    height: 30px;
+    vertical-align: middle; 
+    position: absolute;
+    top: 20px; left: 350px;
+    transition: transform ease .5s;
+    z-index: 2;
+
+    i { font-size: 30px; }
+  }
+
+  main {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  footer {
+    border-top: 1px solid $light-grey;
+    padding: 20px;
+  }
+}
